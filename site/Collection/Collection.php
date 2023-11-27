@@ -8,7 +8,7 @@ class Collection
     private array $list;
 
     /**
-     * Constructer.
+     * Constructor.
      */
     public function __construct()
     {
