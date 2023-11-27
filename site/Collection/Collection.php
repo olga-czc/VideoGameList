@@ -15,7 +15,7 @@ class Collection
         $this->list = array();
     }
 
-    public function add(Game $game)
+    public function addGame(Game $game)
     {
         $this->list[]=$game;
     }
