@@ -6,6 +6,7 @@ require_once("Game/Game.php");
 use Web\GameList\Game;
 use Web\GameList\Editor;
 use Web\GameList\Collection;
+session_start();
 ?>
 
 <!doctype html>
@@ -22,6 +23,16 @@ use Web\GameList\Collection;
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css?v=1.0.0">
 </head>
+<header>
+    <div class="container p-3">
+        <?php if(empty($_SESSION)): ?>
+            <a href="Connection/login.php">Login</a>
+        <?php else: ?>
+            <a href="Connection/logout.php">Logout</a>
+        <?php endif;
+        ?>
+    </div>
+</header>
 <body>
 <?php
 $editor1 = new Editor("CD Project");
