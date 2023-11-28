@@ -1,7 +1,7 @@
 <?php
-require_once("Collection/Collection.php");
-require_once("Editor/Editor.php");
-require_once("Game/Game.php");
+require_once("GameGroup/Collection/Collection.php");
+require_once("GameGroup/Editor/Editor.php");
+require_once("GameGroup/Game/Game.php");
 
 use Web\GameList\Game;
 use Web\GameList\Editor;
